@@ -34,7 +34,8 @@
         });
 
     $app->get("/view_cats", function() {
-      $skinny = new Cat("skinny", 8, 30, "white and grey", "female");
+      $skinny = new Cat("skinny", 8, 30.5, "white and grey", "female");
+      $skinny->setWeight(30.5);
       $spongeBob = new Cat("Sponge Bob", 13, 35, "orange", "male");
       $meow = new Cat("Meow", 3, 43, "black", "male");
 

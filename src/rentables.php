@@ -17,14 +17,13 @@
             // $this->image = $image;
         }
 
-        // function setWeight = ($new_weight);
-        // {
-        //     $float_weight = (float) $new_weight;
-        //     if ($float_weight !=0) {
-        //         $formatted_weight = number_format($float_weight, 0);
-        //         $this->weight = $formmated_weight;
-        //     }
-        // }
-    // }
+        function setWeight($new_weight)
+        {
+            $float_weight = (float) $new_weight;
+            if ($float_weight !=0) {
+                $formatted_weight = number_format($float_weight, 0);
+                $this->weight = $formatted_weight;
+            }
+        }
     }
 ?>
